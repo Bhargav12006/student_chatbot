@@ -1,0 +1,59 @@
+{
+  "intents": [
+    {
+      "tag": "greeting",
+      "patterns": ["hi", "hello", "hey", "good morning", "good afternoon", "namaste"],
+      "responses": ["Hello! How can I help you today?", "Hi there! Welcome to Student Support.", "Hey! What can I do for you?"]
+    },
+    {
+      "tag": "admission",
+      "patterns": ["admission", "how to apply", "application process", "apply for course", "admission requirements", "when is admission"],
+      "responses": ["Admissions are open from January to March. You need to fill online form, submit documents, and pay fee.", "For admission, visit our website, fill application form, upload documents (10th, 12th marksheets), and pay ₹500 application fee."]
+    },
+    {
+      "tag": "courses",
+      "patterns": ["courses", "available courses", "which courses", "programs", "degrees", "bsc", "bcom", "ba", "bca"],
+      "responses": ["We offer B.Sc (Computer Science, Physics, Chemistry), B.Com, B.A (English, Economics), BCA, and MBA programs.", "Our popular courses include B.Tech, B.Sc IT, B.Com Hons, and various diploma programs."]
+    },
+    {
+      "tag": "fees",
+      "patterns": ["fees", "tuition fee", "course fee", "payment", "how much", "cost"],
+      "responses": ["B.Sc fee: ₹40,000/year, B.Com: ₹35,000/year, BCA: ₹45,000/year, MBA: ₹1.5 Lakhs/year. Hostel fee extra.", "Fees can be paid online via credit card, debit card, UPI, or net banking. Scholarships available for meritorious students."]
+    },
+    {
+      "tag": "schedule",
+      "patterns": ["schedule", "timetable", "class timing", "time table", "class schedule", "when are classes"],
+      "responses": ["Classes run from 9 AM to 4 PM, Monday to Friday. Each subject has 3 lectures per week.", "You can check your personalized timetable on our student portal using your login credentials."]
+    },
+    {
+      "tag": "exam",
+      "patterns": ["exam", "examination", "test", "mid term", "final exam", "semester"],
+      "responses": ["Mid-term exams in September, Final exams in December. Practical exams conducted separately.", "Exam schedule is released 1 month before exams. Minimum 75% attendance required to appear."]
+    },
+    {
+      "tag": "library",
+      "patterns": ["library", "books", "reading", "study material", "resources"],
+      "responses": ["Library open 8 AM to 8 PM. Digital library available 24/7. You can issue 5 books for 15 days.", "We have 50,000+ books, e-journals, and online databases. Membership is free for all students."]
+    },
+    {
+      "tag": "hostel",
+      "patterns": ["hostel", "accommodation", "room", "stay", "living", "hostel fee"],
+      "responses": ["Separate hostels for boys and girls. Double sharing rooms with mess facility. Hostel fee: ₹80,000/year.", "Hostel admission is separate from course admission. Limited seats, apply early."]
+    },
+    {
+      "tag": "contact",
+      "patterns": ["contact", "help", "support", "query", "complaint", "office"],
+      "responses": ["Student Support Office: Room 101, Main Building. Email: support@university.edu, Phone: 011-12345678", "You can also raise a ticket on our student portal or visit the helpdesk 10 AM to 5 PM."]
+    },
+    {
+      "tag": "bye",
+      "patterns": ["bye", "goodbye", "thanks", "thank you", "see you", "exit"],
+      "responses": ["Thank you for using Student Support! Have a great day!", "Goodbye! Feel free to come back if you have more questions.", "Happy learning! Take care!"]
+    },
+    {
+      "tag": "fallback",
+      "patterns": [],
+      "responses": ["I'm sorry, I didn't understand. Could you please rephrase?", "I'm not sure about that. Please contact student support office for detailed help.", "Can you ask in a different way? I'm still learning!"]
+    }
+  ]
+}

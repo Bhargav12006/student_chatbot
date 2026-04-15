@@ -1,0 +1,73 @@
+<!-- Main chat interface -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Student Support Chatbot | AI Assistant</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+</head>
+<body>
+    <div class="container">
+        <!-- Header -->
+        <div class="chat-header">
+            <div class="header-content">
+                <div class="bot-icon">🤖</div>
+                <div class="header-text">
+                    <h1>Student Support Assistant</h1>
+                    <p>AI-powered chatbot for your queries</p>
+                </div>
+            </div>
+            <button id="clearChatBtn" class="clear-btn">Clear Chat</button>
+        </div>
+
+        <!-- Quick Topics -->
+        <div class="topics-section">
+            <h3>Quick Help Topics:</h3>
+            <div class="topics-list">
+                {% for topic in topics %}
+                <button class="topic-btn" data-topic="{{ topic }}">{{ topic|capitalize }}</button>
+                {% endfor %}
+            </div>
+        </div>
+
+        <!-- Chat Messages Area -->
+        <div class="chat-container" id="chatContainer">
+            <div class="message bot-message">
+                <div class="message-content">
+                    <div class="message-icon">🤖</div>
+                    <div class="message-text">
+                        Hello! I'm your Student Support Assistant. 👋<br>
+                        I can help you with:<br>
+                        • Course information<br>
+                        • Admission process<br>
+                        • Fee structure<br>
+                        • Class schedules<br>
+                        • Exams and more!<br><br>
+                        How can I help you today?
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Input Area -->
+        <div class="input-container">
+            <div class="input-wrapper">
+                <textarea 
+                    id="userInput" 
+                    placeholder="Type your question here... (e.g., What is the admission process?)"
+                    rows="1"
+                ></textarea>
+                <button id="sendBtn" class="send-btn">
+                    <span>Send</span> 📤
+                </button>
+            </div>
+            <div class="input-hint">
+                <small>Press Enter to send, Shift+Enter for new line</small>
+            </div>
+        </div>
+    </div>
+
+    <script src="{{ url_for('static', filename='script.js') }}"></script>
+</body>
+</html>
